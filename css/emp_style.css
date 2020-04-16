@@ -1,0 +1,39 @@
+.header
+{
+	position: relative;
+	top: 0;
+	width: 100%;
+	display: inline-block;
+	background-color: #f1f1f1;
+}
+.container-header
+{
+	width:100%;
+	background-color: #f1f1f1;
+}
+#com_title
+{
+	font-family: Comic Sans MS;
+	font-size: 30px;
+	margin-top: 15px;
+	margin-bottom: 16px;
+}
+#com_subtitle
+{
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	margin-bottom: 16px;
+}
+img
+{
+	vertical-align: middle;
+	max-width: 100%;
+}
+.bd-navbar
+{
+	background-color: #443737;
+	max-height: 40px;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}

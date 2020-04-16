@@ -1,0 +1,64 @@
+body ,html
+{
+	height: 100%;
+	font-family: Comic Sans MS;
+}
+.limiter
+{
+  width: 100%;
+  margin: 0 auto;
+}
+.container-login
+{
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #f2f2f2;  
+}
+.wrap-login
+{
+  width: 390px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 60px 45px 25px 45px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.form-title 
+{
+  display: block;
+  font-family: Comic Sans MS;
+  font-size: 30px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 38px;
+}
+.icon
+{
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	padding-bottom: 26px;
+}
+.bottom
+{
+	text-align: center;
+	padding-top: 75px; 
+}
+.txt
+{
+	font-family: Comic Sans Ms;
+	font-size: 15px;
+  color: #666666;
+ 	line-height: 1.5;
+}
+a:hover
+{
+  text-decoration: none;
+  color: blue;  
+}
