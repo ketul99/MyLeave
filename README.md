@@ -1,12 +1,15 @@
 # MyLeave
 Web Application for Leave Management System.
 - Enter Your Email, Password and Name in **register_user.php** and **php/mail_function.php** for sending Email.
-- Enter IP ADDRESS, DATABASE USERNAME, DATABASE PASSWORD and DATABASE NAME in **php/config.php**.
+- Enter Your IP ADDRESS, DATABASE USERNAME, DATABASE PASSWORD and DATABASE NAME in **php/config.php**.
     - If you are using XAMPP Server(by default)
         - IP ADDRESS : 127.0.0.1
         - DATABASE USERNAME : root
         - DATABASE PASSWORD : null
         - DATABASE NAME : Your Database Name
+- Enter Your IP ADDRESS/DOMAIN NAME for Email Verfication through PHPMailer in **register_user.php**.
+    - If you are using XAMPP Server(by default)
+        - IP ADDRESS : 127.0.0.1 
 - Enter Encryption/Decryption Method, Key and IV in **register_user.php** and **php/verification.php** respectively.
 - For Database
     - Create 4 Tables

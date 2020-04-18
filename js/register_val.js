@@ -11,11 +11,11 @@ function register_val()
 		}
 
 	var user_emp_id = document.register_form.user_emp_id.value;
-	var emp_id_pat = /^[A-Z]+[0-9]+$/;
+	var emp_id_pat = /^[a-zA-Z]+[0-9]+$/;
 
 	if(!(emp_id_pat.test(user_emp_id)))
 		{
-			alert("Enter Valid Employee ID");
+			alert("Enter Valid Employee ID (Ex. CP1740)");
 			document.register_form.user_emp_id.focus();
 			return false;
 		}
@@ -25,7 +25,7 @@ function register_val()
 	
 	if (!(mob_pat.test(user_mob)))
 		{
-			alert("Enter Valid Mobile Number");
+			alert("Enter Valid Mobile Number (Without Prefix 0 and +91)");
 			document.register_form.user_mob.focus();
 			return false;
 		}

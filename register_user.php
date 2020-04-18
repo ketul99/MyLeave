@@ -3,7 +3,7 @@
 	if(isset($_POST["submit"]))
 	{
 		$name = $_POST['name'];
-		$user_emp_id = $_POST['user_emp_id'];
+		$user_emp_id = strtoupper($_POST['user_emp_id']);
 		$user_mob = $_POST['user_mob'];
 		$user_email = $_POST['user_email'];
 		$user_pass = md5($_POST['user_pass']);
@@ -16,7 +16,7 @@
 		
 		if($conn->query($query) === TRUE)
 		{
-			$message_body = "Please confirm your account registration by clicking the link : <a href='http://127.0.0.1/myleave/php/verification.php?id=" . $enc_id . "'>Click Here</a><br><br><p>--<br>Regards,<br>MyLeave(Pearson Hardman)<br>+91 XXXXX XXXXX</p>";
+			$message_body = "Please confirm your account registration by clicking the link : <a href='http://(YOUR IP ADDRESS/DOMAIN NAME)/myleave/php/verification.php?id=" . $enc_id . "'>Click Here</a><br><br><p>--<br>Regards,<br>MyLeave(Pearson Hardman)<br>+91 XXXXX XXXXX</p>";
 			$mail_status = sendverification($user_email,$message_body);
 			echo '<script type="text/javascript">alert("Check Your Inbox for Email Verification");window.location = "index.php";</script>';
 		}
